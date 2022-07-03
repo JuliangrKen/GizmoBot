@@ -13,9 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Commands\Admin\" />
     <Folder Include="Database\" />
     <Folder Include="Commands\Dev\" />
-    <Folder Include="Modules\" />
+    <Folder Include="Modules\Profiles\" />
+    <Folder Include="Modules\Items\" />
   </ItemGroup>
 
 </Project>

@@ -14,7 +14,8 @@
 
   <ItemGroup>
     <Folder Include="Database\" />
-    <Folder Include="Modules\Dev\" />
+    <Folder Include="Commands\Dev\" />
+    <Folder Include="Modules\" />
   </ItemGroup>
 
 </Project>

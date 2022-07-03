@@ -55,7 +55,7 @@ public class Program
         }
     }
 
-    private async Task HandleSlashCommandAsync()
+    private async Task HandleSlashCommandAsync() 
     {
         _interactionService = new InteractionService(_client);
         await _interactionService.AddModulesAsync(Assembly.GetEntryAssembly(), _services);

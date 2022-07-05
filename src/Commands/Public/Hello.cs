@@ -29,7 +29,7 @@ namespace GizmoBot.Commands
             [Command("пр")]
             public async Task PrefixHelloCommandRuAbb() => await PrefixHelloCommand();
         }
-        public class SlashCommand : InteractionModuleBase<SocketInteractionContext>
+        public class SlashCommands : InteractionModuleBase<SocketInteractionContext>
         {
             [SlashCommand("hello", "поздороваться с ботом")]
             public async Task Hello()

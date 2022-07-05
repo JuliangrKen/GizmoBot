@@ -1,12 +1,6 @@
 ﻿using Discord;
 using Discord.Commands;
 using Discord.Interactions;
-using Discord.WebSocket;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GizmoBot.Commands
 {
@@ -46,9 +40,9 @@ namespace GizmoBot.Commands
             [Command("ролл")]
             public async Task RollCommandRuAbb() => await RollCommand();
         }
-        public class SlashCommand : InteractionModuleBase<SocketInteractionContext>
+        public class SlashCommands : InteractionModuleBase<SocketInteractionContext>
         {
-            [Command, SlashCommand("roll", "генерирует случайное число")]
+            [SlashCommand("roll", "генерирует случайное число")]
             public async Task RollCommand(int Максимум = 100, int Минимум = 1)
             {
                 if (Минимум > Максимум) await RespondAsync("`Ошибка. Вы установили минимум больший, чем максимум.`");

@@ -1,10 +1,5 @@
 ﻿using Discord.Commands;
 using Discord.Interactions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GizmoBot.Commands
 {
@@ -16,7 +11,6 @@ namespace GizmoBot.Commands
             public async Task PrefixHelloCommand()
             {
                 var user = Context.User;
-                var client = Context.Client;
                 await ReplyAsync($"**Ну привет-медвед, <@{user.Id}> !**");
             }
 
